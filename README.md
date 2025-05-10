@@ -61,20 +61,20 @@ print("🧠 CUDA available:", torch.cuda.is_available())
 
 #### Cell 4: Helper functions
 python
-# Setup and helper functions for:
-# - Visualizing 3D models using pyrender
-# - Visualizing 3D models using matplotlib
-# - Text-to-3D conversion using Shap-E
-# - Image-to-3D conversion using TripoSR
+### Setup and helper functions for:
+### - Visualizing 3D models using pyrender
+### - Visualizing 3D models using matplotlib
+### - Text-to-3D conversion using Shap-E
+### - Image-to-3D conversion using TripoSR
 
 
 #### Cell 5: Run the main program
 python
 # Main program that:
-# - Prompts for text input
-# - Prompts for image path
-# - Calls appropriate conversion functions
-# - Visualizes and saves results
+### - Prompts for text input
+### - Prompts for image path
+### - Calls appropriate conversion functions
+### - Visualizes and saves results
 
 
 ## 💻 Usage
@@ -103,17 +103,17 @@ The program will:
 
 *Text Prompt:* "A Futuristic Aircraft"
 
-![Text-to-3D Output](grooth.jpg)
+![Text-to-3D Output](spaceship.jpg)
 
 ### Image-to-3D Example
 
 *Input Image:*
 
-![Input Image](./oneimg..jpeg)
+![Input Image](grooth.jpg)
 
 *3D Output:*
 
-![Image-to-3D Output](./oneimg-1.jpeg)
+![Image-to-3D Output](gen.jpg)
 
 ## ⚙ Advanced Configuration
 
