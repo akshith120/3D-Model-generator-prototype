@@ -103,7 +103,7 @@ The program will:
 
 *Text Prompt:* "A Futuristic Aircraft"
 
-![Text-to-3D Output](./twoimg.jpeg)
+![Text-to-3D Output](grooth.jpg)
 
 ### Image-to-3D Example
 
