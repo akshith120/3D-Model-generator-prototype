@@ -27,26 +27,26 @@ bash
 
 The requirements.txt file includes:
 
-omegaconf==2.3.0
-Pillow==10.1.0
-einops==0.7.0
-git+https://github.com/tatsy/torchmcubes.git
-transformers==4.39.3
-trimesh==4.0.5
-rembg
-huggingface-hub==0.20.3
-imageio[ffmpeg]
-gradio
-xatlas==0.0.9
-moderngl==5.10.0
-onnxruntime-gpu
-accelerate==0.28.0
-PyOpenGL
-pyopengl_accelerate
-torch
-shap-e @ git+https://github.com/openai/shap-e.git
-pyrender
-numpy
+-omegaconf==2.3.0
+-Pillow==10.1.0
+-einops==0.7.0
+-git+https://github.com/tatsy/torchmcubes.git
+-transformers==4.39.3
+-trimesh==4.0.5
+-rembg
+-huggingface-hub==0.20.3
+-imageio[ffmpeg]
+-gradio
+-xatlas==0.0.9
+-moderngl==5.10.0
+-onnxruntime-gpu
+-accelerate==0.28.0
+-PyOpenGL
+-pyopengl_accelerate
+-torch
+-shap-e @ git+https://github.com/openai/shap-e.git
+-pyrender
+-numpy
 
 
 *Important*: Restart your runtime/session after installation completes
@@ -59,7 +59,7 @@ print("🧠 CUDA available:", torch.cuda.is_available())
 %cd "/content/TripoSR"
 
 
-#### Cell 4: Helper functions
+## Cell 4: Helper functions
 python
 ### Setup and helper functions for:
 ### - Visualizing 3D models using pyrender
@@ -68,7 +68,7 @@ python
 ### - Image-to-3D conversion using TripoSR
 
 
-#### Cell 5: Run the main program
+## Cell 5: Run the main program
 python
 # Main program that:
 ### - Prompts for text input
