@@ -15,67 +15,66 @@ A versatile tool for generating 3D models from text descriptions or single image
 Simply run these cells in order:
 
 #### Cell 1: Clone the repository
-bash
+```bash
 !git clone https://github.com/akshith120/TripoSR
 %cd "/content/TripoSR"
-
-
+```
 #### Cell 2: Install dependencies
-bash
+```bash
 !pip install -r requirements.txt
+```
 
-
-The requirements.txt file includes:
-
--omegaconf==2.3.0
--Pillow==10.1.0
--einops==0.7.0
--git+https://github.com/tatsy/torchmcubes.git
--transformers==4.39.3
--trimesh==4.0.5
--rembg
--huggingface-hub==0.20.3
--imageio[ffmpeg]
--gradio
--xatlas==0.0.9
--moderngl==5.10.0
--onnxruntime-gpu
--accelerate==0.28.0
--PyOpenGL
--pyopengl_accelerate
--torch
--shap-e @ git+https://github.com/openai/shap-e.git
--pyrender
--numpy
-
+The requirements include:
+```
+omegaconf==2.3.0
+Pillow==10.1.0
+einops==0.7.0
+git+https://github.com/tatsy/torchmcubes.git
+transformers==4.39.3
+trimesh==4.0.5
+rembg
+huggingface-hub==0.20.3
+imageio[ffmpeg]
+gradio
+xatlas==0.0.9
+moderngl==5.10.0
+onnxruntime-gpu
+accelerate==0.28.0
+PyOpenGL
+pyopengl_accelerate
+torch
+shap-e @ git+https://github.com/openai/shap-e.git
+pyrender
+numpy
+```
 
 *Important*: Restart your runtime/session after installation completes
 
 #### Cell 3: Verify setup
-python
+```python
 import torch
 print("🔍 PyTorch version:", torch.__version__)
 print("🧠 CUDA available:", torch.cuda.is_available())
 %cd "/content/TripoSR"
+```
 
-
-## Cell 4: Helper functions
-python
+#### Cell 4: Helper functions
+```python
 ### Setup and helper functions for:
-### - Visualizing 3D models using pyrender
-### - Visualizing 3D models using matplotlib
-### - Text-to-3D conversion using Shap-E
-### - Image-to-3D conversion using TripoSR
+ - Visualizing 3D models using pyrender
+ - Visualizing 3D models using matplotlib
+ - Text-to-3D conversion using Shap-E
+ - Image-to-3D conversion using TripoSR
+```
 
-
-## Cell 5: Run the main program
-python
+#### Cell 5: Run the main program
+```python
 # Main program that:
 ### - Prompts for text input
 ### - Prompts for image path
 ### - Calls appropriate conversion functions
 ### - Visualizes and saves results
-
+```
 
 ## 💻 Usage
 
@@ -103,7 +102,7 @@ The program will:
 
 *Text Prompt:* "A Futuristic Aircraft"
 
-![Text-to-3D Output](spaceship.jpg)
+![Text-to-3D Output](spaceship.jpg width="500")
 
 ### Image-to-3D Example
 
@@ -126,7 +125,7 @@ For higher quality text-to-3D models, you can modify the run_shapee_text_to_3d f
 
 Example modification for better quality:
 
-python
+```python
 latents = sample_latents(
     batch_size=1,
     model=model,
@@ -142,7 +141,7 @@ latents = sample_latents(
     sigma_max=160,
     s_churn=0,
 )
-
+```
 
 > *Note:* Higher values for these parameters will significantly increase generation time but produce better results. The default values offer a good balance between quality and speed.
 
